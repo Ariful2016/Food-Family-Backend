@@ -16,7 +16,7 @@ const OrderRoute = require("./routes/order");
 dotenv.config();
 
 mongoose.connect(process.env.MONGOURL)
-.then(() => console.log("Foodly Database Connected"))
+.then(() => console.log("Foodl Family Database Connected"))
 .catch((err) => console.log(err));
 
 
@@ -35,4 +35,4 @@ app.use("/api/orders", OrderRoute);
 
 
 
-app.listen(process.env.PORT || 6013, () => console.log(`Foodly Backend is running on ${process.env.PORT}!`))
+app.listen(process.env.PORT || 6013, () => console.log(`Foodl Family Backend is running on ${process.env.PORT}!`))
