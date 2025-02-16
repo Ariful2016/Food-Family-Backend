@@ -3,6 +3,7 @@ const restaurantController = require('../controllers/restaurantController');
 const {verifyTokenAndAuthorization} = require('../middleware/verifyToken');
 
 router.post("/",verifyTokenAndAuthorization, restaurantController.addRestaurant);
+//router.post("/", restaurantController.addRestaurant);
 
 router.get("/:code", restaurantController.getRandomRestaurants);
 
