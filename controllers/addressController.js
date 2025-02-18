@@ -2,6 +2,7 @@ const User = require('../models/User');
 const Address = require('../models/Address');
 
 module.exports = {
+    // add
     addAddress: async (req, res) => {
 
         const newAddress = new Address({
@@ -26,6 +27,7 @@ module.exports = {
         }
     },
 
+    // get
     getAddresses: async (req, res) => {
         try {
             const addresses = await Address.find({userId: req.user.id});
@@ -36,6 +38,7 @@ module.exports = {
         }
     },
 
+    // delete
     deleteAddress: async (req, res)=> {
         try {
             await Address.findByIdAndDelete(req.params.id);
