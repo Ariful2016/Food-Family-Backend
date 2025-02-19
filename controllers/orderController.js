@@ -15,6 +15,7 @@ module.exports = {
         }
     },
 
+    //get user orders
     getUserOrders: async (req, res) => {
         const userId = req.user.id;
         const {paymentStatus, orderStatus} = req.query;
