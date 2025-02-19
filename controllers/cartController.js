@@ -71,6 +71,7 @@ module.exports = {
         }
     },
 
+    // cart count
     getCartCount: async(req, res) => {
         const userId = req.user.id;
 
