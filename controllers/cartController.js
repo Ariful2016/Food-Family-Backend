@@ -37,6 +37,7 @@ module.exports = {
         }
     },
 
+    //remove item from cart
     removeCartItem: async (req, res) => {
         const cartItemId = req.params.id;
         const userId = req.user.id;
