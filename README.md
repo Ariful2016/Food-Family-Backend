@@ -26,8 +26,8 @@ Ensure you have the following installed:
 ### Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/food-family.git
-   cd food-family
+   git clone https://github.com/Ariful2016/Food-Family-Backend.git
+   cd Food-Family-Backend
    ```
 2. Install dependencies:
    ```sh
@@ -59,9 +59,5 @@ Ensure you have the following installed:
 | `/api/cart` | `GET/POST/DELETE` | Shopping cart operations |
 | `/api/orders` | `GET/POST/PUT/DELETE` | Order processing |
 
-## Contributing
-Feel free to contribute to **Food Family** by submitting pull requests or issues.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
+Happy coding! 🎉
 
