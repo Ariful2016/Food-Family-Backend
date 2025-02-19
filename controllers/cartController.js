@@ -84,6 +84,7 @@ module.exports = {
         }
     },
 
+    //decrement product quantity
     decrementProductQty: async(req, res) => {
         const userId = req.user.id;
         const id = req.params.id;
