@@ -51,6 +51,7 @@ module.exports = {
         }
     },
 
+    // get cart
     getCart: async(req, res)=> {
         const userId = req.user.id;
         try {
