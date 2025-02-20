@@ -4,6 +4,7 @@ Food Family is a RESTful API backend for a food delivery application. It provide
 
 ## Features
 - User authentication and authorization (JWT-based)
+- Type of Users like client, deiver, admin and vendor
 - Category, restaurant, and food management
 - Address management for users
 - Cart and order processing
