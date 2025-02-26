@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const CategoryRoute = require("./routes/category")
 const RestaurantRoute = require("./routes/restaurant")
 const FoodRoute = require("./routes/food") 
@@ -23,6 +24,7 @@ mongoose.connect(process.env.MONGOURL)
 
 app.use(express.json());                 
 app.use(express.urlencoded({extended: true}));
+app.use(cors()); // Enable CORS
 app.use("/", AuthRoute);
 app.use("/api/users", UserRoute);
 app.use("/api/category", CategoryRoute);
@@ -34,5 +36,6 @@ app.use("/api/cart", CartRoute);
 app.use("/api/orders", OrderRoute);
 
 
+//,"192.168.11.74"
 
 app.listen(process.env.PORT || 6013, () => console.log(`Foodl Family Backend is running on ${process.env.PORT}!`))
